@@ -14,3 +14,25 @@ body{
  font-family: 'Stoke', serif;
 }
 
+#heading{
+    background-color:var(--primary-color);
+    text-align: center;
+    padding: 4rem 4rem;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+#wrapper{
+    box-sizing: border-box;
+    margin: auto;
+    width:40rem;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+    border: solid #f0abfc 3px;
+    border-radius: 0.5rem;
+    background-color: #f0abfc ; 
+    box-sizing: border-box;
+   
+}
+
