@@ -54,3 +54,25 @@ h3{
    font-weight: bolder
 }
 
+#button{
+    width: 35%;
+    padding: 0.5rem 1rem;
+    border: solid black 2px;
+    border-radius: 1rem;
+    background-color:white;
+    color: #0f0a10;
+    font-family: 'Cormorant Infant', serif;
+    font-weight: bolder;
+    font-size: 30px; 
+    margin-left: 12.5rem;
+ }
+ 
+ .rmainingGuess{
+     margin-top: 1.5rem;
+     text-align: center;
+     font-size: large;
+     font-weight: 200;
+     margin-bottom: 1rem;
+ }
+ 
+ 
