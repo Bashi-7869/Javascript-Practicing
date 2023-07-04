@@ -68,11 +68,13 @@ h3{
  }
  
  .rmainingGuess{
-     margin-top: 1.5rem;
-     text-align: center;
      font-size: large;
-     font-weight: 200;
-     margin-bottom: 1rem;
+     font-weight: bold;  
+ } 
+
+ .previousGuess{
+     font-size: large;
+     font-weight: bold;
  }
- 
+
  
