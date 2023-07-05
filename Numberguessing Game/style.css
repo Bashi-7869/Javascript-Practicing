@@ -77,4 +77,16 @@ h3{
      font-weight: bold;
  }
 
- 
+ .restart{
+    margin-top: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+ }
+
+ .result{
+     margin-top: 2rem;
+     font-size: 700;
+     font-weight: bold;
+ }
+
