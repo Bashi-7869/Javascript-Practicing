@@ -29,4 +29,11 @@ const jokesPlay = [
   ]
    
  
+let button = document.getElementById('nextJoke');
+let output = document.getElementById('jokesplay');
+
+  // adding eventlistener
+button.addEventListener("click", jokesHandler);
+
+
   
