@@ -35,5 +35,9 @@ let output = document.getElementById('jokesplay');
   // adding eventlistener
 button.addEventListener("click", jokesHandler);
 
+function jokesHandler() {                         
+  let jokes = Math.floor(Math.random() * (jokesPlay.length));  // processing data
 
+  output.innerHTML = jokesPlay[jokes]   // showing output to user
+}
   
