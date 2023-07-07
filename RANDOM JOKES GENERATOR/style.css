@@ -1,0 +1,23 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.conatainer{
+     box-sizing: border-box;
+      padding: 8rem;
+      width: 40rem;
+      margin: auto;
+      box-align: center;
+      background-color: aqua;
+      margin-top: 10rem;
+      border:  5px solid black;
+      border-radius: 4px;
+   
+  }
+  
