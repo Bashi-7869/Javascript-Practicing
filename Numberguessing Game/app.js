@@ -9,3 +9,12 @@ const p = document.createElement('p');
 let previousGuesses = [];
 let numberofGuesses = 1;
 let playGame = true;
+
+if (playGame){
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+      
+    });
+ }
+
+   
