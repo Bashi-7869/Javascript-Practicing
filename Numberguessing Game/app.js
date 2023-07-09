@@ -14,7 +14,11 @@ if (playGame){
     button.addEventListener('click', (e) => {
         e.preventDefault();
       
+    //taking input from user
+      const guess = parseInt(userInput.value);
+      userguessingDate(guess);
     });
  }
 
-   
+ 
+
