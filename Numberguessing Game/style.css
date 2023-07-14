@@ -118,3 +118,20 @@ h5{
     margin-bottom: 1rem;
 }
 
+footer{
+    background-color: black;
+    padding: 2rem;
+    color: var(--primary-color);
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 100;
+    }
+    
+    a.link{
+        
+        padding: 1rem 1rem;
+    }  
+    
+    
+    
+    
