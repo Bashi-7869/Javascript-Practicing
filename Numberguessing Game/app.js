@@ -21,7 +21,8 @@ if (playGame){
  }
 
  function userguessingDate(guess){
-
+     
+    // showing alert messages to user if user wrong
     if (isNaN(guess)){
         alert('Please enter a valid number');
     } else if (guess < 1) {
