@@ -21,3 +21,17 @@ html, body {
    
   }
   
+  
+  .randomjoke{
+    background-color: black;
+    padding: 3rem 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: cyan;
+    text-shadow:  1px 1px #140b0b;
+  }
+  
+  #jokesplay{
+    color: black;
+    text-align: center;
+  }
