@@ -35,3 +35,20 @@ html, body {
     color: black;
     text-align: center;
   }
+
+  
+  button{
+    
+    box-sizing: border-box;
+     margin-left: 50rem;
+    padding:1rem ; 
+    width:20rem;
+     margin-top: 2rem;
+     margin-bottom: 1rem;
+    /* box-align: center; */
+  }
+  
+  h4{
+    color: cyan;
+  }
+
