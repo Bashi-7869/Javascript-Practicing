@@ -20,7 +20,7 @@ if (playGame){
     });
  }
 
- function userguessingDate(guess){
+  function userguessingDate(guess){
      
     // showing alert messages to user if user wrong
     if (isNaN(guess)){
@@ -30,8 +30,11 @@ if (playGame){
     } else if (guess > 100){
         alert('Please enter a number less than 500!')
     } else {
-       
+         //recording the guesses the user attempted
+        previousGuesses.push(guess);
+    
+         
+      }
     }
-}
-
- 
+  
+     
