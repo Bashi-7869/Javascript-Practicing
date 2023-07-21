@@ -31,14 +31,18 @@
            } else {
          //recording the guesses the user attempted
           previousGuesses.push(guess);
+         //Checking after 10 guesses game is over or not
          if (numberofGuesses === 11){
               displayGuesses(guess);
               displayMessage(`Game Over! Number was ${randomNumber}`);
               endGame();
             } else {
+               //showing previous guessed numbers to users
               displayGuesses(guess);
+               //Checking guess and showing user if wrong
               checkingGuess(guess);
             } 
         }
     }
          
+        
