@@ -55,4 +55,10 @@
             displayMessage(`Too High! Try again!`);
         }
     }
+    function displayGuesses(guess){
+        userInput.value = '';
+        previousGuess.innerHTML += `${guess}  `;
+        numberofGuesses++
+        remainingGuess.innerHTML = `${11 - numberofGuesses}  `;
+    }
     
