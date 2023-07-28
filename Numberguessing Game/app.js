@@ -62,3 +62,8 @@
         remainingGuess.innerHTML = `${11 - numberofGuesses}  `;
     }
     
+    function displayMessage(message){
+        result.innerHTML = `<h1>${message}</h1>`
+    }
+    
+    
