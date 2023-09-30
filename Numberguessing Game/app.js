@@ -61,7 +61,7 @@
         numberofGuesses++
         remainingGuess.innerHTML = `${11 - numberofGuesses}  `;
     }
-    //  display messages to user
+    //   displaying messages to user
     function displayMessage(message){
         result.innerHTML = `<h1>${message}</h1>`
     }
@@ -71,15 +71,15 @@
         userInput.value = ''; 
         //Disable user input button
         userInput.setAttribute('disabled', '');
-             //  adding new button for game
+        // adding new button for game
               p.classList.add('button');
-               //Display Start new Game Button
+              //Display Start new Game Button
               p.innerHTML = `<h1 id="newGame">Start New Game</h1>`
         restart.appendChild(p);
         playGame = false;
         newGame();
     }
-    //  after ending game starting new game
+    // after ending game starting new game
     function newGame(){
         const newGameButton = document.querySelector('#newGame');
         newGameButton.addEventListener('click', function(){
