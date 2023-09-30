@@ -61,7 +61,7 @@
         numberofGuesses++
         remainingGuess.innerHTML = `${11 - numberofGuesses}  `;
     }
-    //  dissplaying messages to user
+    //  display messages to user
     function displayMessage(message){
         result.innerHTML = `<h1>${message}</h1>`
     }
@@ -71,12 +71,28 @@
         userInput.value = ''; 
         //Disable user input button
         userInput.setAttribute('disabled', '');
-        //Display Start new Game Button
+             //  adding new button for game
               p.classList.add('button');
+               //Display Start new Game Button
               p.innerHTML = `<h1 id="newGame">Start New Game</h1>`
         restart.appendChild(p);
         playGame = false;
         newGame();
     }
-    
+    //  after ending game starting new game
+    function newGame(){
+        const newGameButton = document.querySelector('#newGame');
+        newGameButton.addEventListener('click', function(){
+            //Pick a new random number
+            randomNumber = parseInt((Math.random()*100)+1);
+            previousGuesses = [];
+            numberofGuesses = 1;
+            previousGuess.innerHTML = '';
+            result.innerHTML = '';
+            remainingGuess.innerHTML = `${11 - numberofGuesses}  `;
+            userInput.removeAttribute('disabled');
+            restart.removeChild(p);
+            playGame = true;
+        })
+    }
    
