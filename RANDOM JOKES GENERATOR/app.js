@@ -59,4 +59,11 @@ function clickHandler(){
     output.innerHTML = displayJoke
       
     })
+    .catch(errorHandler)
 }
+
+ function errorHandler(error){
+    console.log("errror occurred", error);
+    alert("Something went wrong with server!Try again after some time")
+}
+
