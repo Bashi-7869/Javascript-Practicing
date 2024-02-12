@@ -49,3 +49,5 @@ let output = document.getElementById('text-output');
 const serverUrl = "https://v2.jokeapi.dev/joke/Programming?type=single"
 
 
+button.addEventListener("click", clickHandler)
+
