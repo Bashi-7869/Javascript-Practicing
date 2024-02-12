@@ -51,3 +51,12 @@ const serverUrl = "https://v2.jokeapi.dev/joke/Programming?type=single"
 
 button.addEventListener("click", clickHandler)
 
+function clickHandler(){
+    fetch(serverUrl)
+   .then(response => response.json())
+   .then(json => { let displayJoke = json.joke;
+           
+    output.innerHTML = displayJoke
+      
+    })
+}
