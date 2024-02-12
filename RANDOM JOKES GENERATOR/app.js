@@ -30,7 +30,7 @@
    
  
 // let button = document.getElementById('nextJoke');
-// let output = document.getElementById('jokesplay');
+// let output = document.getElementById('text-output');
 
 //   // adding eventlistener
 // button.addEventListener("click", jokesHandler);
@@ -44,4 +44,8 @@
 
 
 let button = document.getElementById('nextJoke');
-let output = document.getElementById('jokesplay');
+let output = document.getElementById('text-output');
+
+const serverUrl = "https://v2.jokeapi.dev/joke/Programming?type=single"
+
+
