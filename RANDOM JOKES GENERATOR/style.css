@@ -18,6 +18,8 @@ html, body {
   margin-top: 10rem;
   border:  5px solid black;
   border-radius: 4px;
+  font-size: 1.5rem;
+  font-weight: 200;
 }
   
 .randomjoke{
