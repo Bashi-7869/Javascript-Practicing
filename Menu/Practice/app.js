@@ -45,13 +45,13 @@ window.addEventListener("DOMContentLoaded", function (){
         // console.log(item);
 
         return`<article class="menu-item">
-                    <img src="/images/item1.jpg" class="photo" alt="image" />
+                    <img src=${item.img} class="photo" alt=${item.title} />
                     <div class="item-info">
                        <header>
-                           <h4>japanes stuffel pancakes</h4>
-                           <h4 class="price">$16</h4>
+                           <h4>${item.title}</h4>
+                           <h4 class="price">${item.price}</h4>
                        </header>
-                       <p class="item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sit atque       cumque natus totam magnam! Assumenda magnam nihil mollitia accusantium velit perferendis labore, natus doloremque voluptates excepturi repudiandae vel voluptas.</p>
+                       <p class="item-text">${item.desc}</p>
                   </div>
              </article> `
 
