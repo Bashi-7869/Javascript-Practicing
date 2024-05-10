@@ -53,9 +53,12 @@ window.addEventListener("DOMContentLoaded", function (){
                        </header>
                        <p class="item-text">${item.desc}</p>
                   </div>
-             </article> `
+             </article> `;
 
 
     });
-    console.log(displayMenu)
+         
+    displayMenu = displayMenu.join("");
+    sectionCenter.innerHTML = displayMenu;
+
 });
