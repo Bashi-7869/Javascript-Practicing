@@ -39,12 +39,23 @@ const menu = [
    
  const sectionCenter = document.querySelector(".section-center")
 
- window.addEventListener("DOMContentLoaded", function (){
+window.addEventListener("DOMContentLoaded", function (){
     let displayMenu = menu.map(function(item){
 
         // console.log(item);
 
-        return `<h1>${item.title}<h1>`
-    })
+        return`<article class="menu-item">
+                    <img src="/images/item1.jpg" class="photo" alt="image" />
+                    <div class="item-info">
+                       <header>
+                           <h4>japanes stuffel pancakes</h4>
+                           <h4 class="price">$16</h4>
+                       </header>
+                       <p class="item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sit atque       cumque natus totam magnam! Assumenda magnam nihil mollitia accusantium velit perferendis labore, natus doloremque voluptates excepturi repudiandae vel voluptas.</p>
+                  </div>
+             </article> `
+
+
+    });
     console.log(displayMenu)
- })
+});
