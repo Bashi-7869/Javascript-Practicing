@@ -61,7 +61,10 @@ function displayMenuItems (menuItems)  {
              </article> `;
          
 });
-console.log(displayMenu)
+// console.log(displayMenu);
+displayMenu = displayMenu.join("");
+sectionCenter.innerHTML = displayMenu;
+
 };
    
     
