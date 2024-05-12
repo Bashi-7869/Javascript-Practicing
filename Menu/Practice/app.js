@@ -47,8 +47,6 @@ window.addEventListener("DOMContentLoaded", () => {
 function displayMenuItems (menuItems)  {
     let displayMenu = menuItems.map ((item) => {
 
-        // console.log(item);
-
         return`<article class="menu-item">
                     <img src=${item.img} class="photo" alt=${item.title} />
                     <div class="item-info">
@@ -61,7 +59,7 @@ function displayMenuItems (menuItems)  {
              </article> `;
          
 });
-// console.log(displayMenu);
+
 displayMenu = displayMenu.join("");
 sectionCenter.innerHTML = displayMenu;
 
