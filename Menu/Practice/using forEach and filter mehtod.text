@@ -46,6 +46,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
 }); 
 
+filterBtns.forEach(function(btn){});
+
 function displayMenuItems (menuItems)  {
     let displayMenu = menuItems.map ((item) => {
 
