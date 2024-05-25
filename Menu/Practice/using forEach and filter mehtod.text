@@ -47,9 +47,25 @@ window.addEventListener("DOMContentLoaded", () => {
 }); 
 
 filterBtns.forEach(function(btn){
-    btn.addEventListener("click", function (e) {});
+    btn.addEventListener("click", function (e) {
+        // console.log(e.currentTarget.dataset.id);
+        const btnCategory = e.currentTarget.dataset.id;
+        const filterMenu = menu.filter(function (menuItem) {
+        //  console.log(menuItem.category);
+        //  return menuItem;
+        if(menuItem.category === btnCategory){
+            return menuItem;
+        }
+        });
+        // console.log(menuCategory);
+        if(btnCategory === 'all'){
+            displayMenuItems(menu)
+        } else {
+            displayMenuItems(filterMenu);
+        }
+    });
 });
-
+    
 function displayMenuItems (menuItems)  {
     let displayMenu = menuItems.map ((item) => {
 
@@ -69,6 +85,4 @@ function displayMenuItems (menuItems)  {
 displayMenu = displayMenu.join("");
 sectionCenter.innerHTML = displayMenu;
 
-};
-   
-    
+};  
