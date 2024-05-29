@@ -38,12 +38,15 @@ const menu = [
 ]
    
 const sectionCenter = document.querySelector(".section-center");
+const btnContainer = document.querySelector(".btn-container");
+const filterBtns = document.querySelectorAll('.filter-btn');
+
 
 window.addEventListener("DOMContentLoaded", () => {
    displayMenuItems(menu);
 
 });
-    
+   
 function displayMenuItems (menuItems)  {
     let displayMenu = menuItems.map ((item) => {
 
@@ -65,3 +68,5 @@ sectionCenter.innerHTML = displayMenu;
 
 };
    
+
+
