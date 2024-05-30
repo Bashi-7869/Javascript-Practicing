@@ -52,7 +52,8 @@ filterBtns.forEach(function(btn){
         // console.log(e.currentTarget.dataset)
         const btnCategory = e.currentTarget.dataset.id;
         const filterMenu = menu.filter(menuItem => {
-            return menuItem
+            console.log(menuItem.category)
+            // return menuItem;
         })
         console.log(filterMenu);
     });
