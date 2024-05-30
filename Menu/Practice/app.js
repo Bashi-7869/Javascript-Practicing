@@ -46,6 +46,8 @@ window.addEventListener("DOMContentLoaded", () => {
    displayMenuItems(menu);
 
 });
+
+filterBtns.forEach(function(){});
    
 function displayMenuItems (menuItems)  {
     let displayMenu = menuItems.map ((item) => {
@@ -60,7 +62,7 @@ function displayMenuItems (menuItems)  {
                        <p class="item-text">${item.desc}</p>
                   </div>
              </article> `;
-         
+        
 });
 
 displayMenu = displayMenu.join("");
