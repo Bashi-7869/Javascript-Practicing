@@ -49,7 +49,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 filterBtns.forEach(function(btn){
      btn.addEventListener("click", function (e) {
-        
+        console.log(e.currentTarget.dataset)
     });
 });
    
