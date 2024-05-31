@@ -57,8 +57,12 @@ filterBtns.forEach(function(btn){
                 return menuItem;
             }
         });
-        console.log(filterMenu);
-       
+        // console.log(filterMenu);
+        if(btnCategory === "all"){
+            displayMenuItems(menu);
+        }else{
+            displayMenuItems(filterMenu);
+        }
     });
 });
    
