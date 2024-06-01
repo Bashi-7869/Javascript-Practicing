@@ -35,6 +35,43 @@ const menu = [
          desc:`This simple but refreshing cake brings about a citurs-y breeze with cashew nuts, lemon juice, dates, coconut oil, soy lecithin filling also Crust almonds, maple syrup`
    
     },
+    {
+        id:18,
+        title:"strawberry sheke",
+        category:"shakes",
+        img:'/images/item20.png',
+        price:16.26,
+        desc:`This is a strawberries, milk, ice cream and flavoring ingredients like vanilla extract or strawberry syrup with whipped cream.`
+  
+    },
+    {
+         id:5,
+         title:"prawnpuff",
+         category:"breakfast",
+         img:"/images/item2.jpg",
+         price:13.46,
+         desc:` The Prawn Puffs mead with Sift the flour with a teaspoon of salt and baking powder. Mix the butter with the flour and knead into a stiff dough using very little water and dip prwan in dough after that put in oven`
+   
+     },
+     {
+        id:6,
+        title:"sweet & sour chiken",
+        category:"lunch",
+        img:'/images/item6.jpg',
+        price:16.26,
+        desc:`Sweet and Sour Chicken is made by batter-frying chicken and then tossing it in a quick and easy sweet and sour sauce`
+  
+    },
+    {
+        id:7,
+        title:"Cajun Blackened Chicken",
+        category:"dinner",
+        img:'/images/item10.jpg',
+        price:16.26,
+        desc:`Caun rubbed chicken sujpreme, red peppers, red onion and crumbled feta with potato puree`
+  
+    },
+
 ]
    
 const sectionCenter = document.querySelector(".section-center");
