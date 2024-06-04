@@ -71,6 +71,42 @@ const menu = [
         desc:`Caun rubbed chicken sujpreme, red peppers, red onion and crumbled feta with potato puree`
   
     },
+    {
+        id:8,
+        title:"strawberry panna cotta",
+        category:"dessert",
+        img:'/images/item14.webp',
+        price:16.26,
+        desc:`chocolate gelato sandwich, braised rhubarb, marshallow, strawberry ships`
+  
+    },
+    {
+        id:18,
+        title:"oreo shake",
+        category:"shakes",
+        img:'/images/item19.jpg',
+        price:16.26,
+        desc:`Oreo shake, double chocolate oreo shake and with ice cream and nuts.`
+  
+    },
+    {
+         id:9,
+         title:"sliptdesion breakfast",
+         category:"breakfast",
+         img:"/images/item3.jpg",
+         price:14.86,
+         desc:` Split Decision Breakfast - Start Your Combos Order Now! 2 eggs*, 2 bacon strips, 2 pork sausage links, 2 buttermilk pancakes & 1 slice of our new Thick Fluffy French Toast`
+   
+    },
+    {
+        id:14,
+        title:"salad prawns",
+        category:"lunch",
+        img:'/images/item8.jpg',
+        price:16.26,
+        desc:`This is a prawns and vegetables with also lime juice, vinegar, sugar, garlic, lemongrass and fresh chilies`
+  
+    },
 
 ]
    
