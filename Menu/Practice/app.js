@@ -107,6 +107,43 @@ const menu = [
         desc:`This is a prawns and vegetables with also lime juice, vinegar, sugar, garlic, lemongrass and fresh chilies`
   
     },
+    
+    {
+        id:11,
+        title:"Slow_Cooker_Vegan_Stew",
+        category:"dinner",
+        img:'/images/item11.jpg',
+        price:16.26,
+        desc:`This vegan Slow Cooker Vegetable Stew is packed with chickpeas, cauliflower, spinach, and other yummy veggies.`
+  
+    },
+    {
+        id:12,
+        title:"tiramisu budino",
+        category:"dessert",
+        img:'/images/item15.png',
+        price:16.26,
+        desc:`This is a chocolate hazelnut pudding, mascarpaone moussem espresso "ice", espresso biscotti`
+  
+    },
+    {
+        id:18,
+        title:"banana shake",
+        category:"shakes",
+        img:'/images/item18.jpg',
+        price:16.26,
+        desc:`This is banana shake with milk and nut butter, fruits, icecream or yogurt`
+  
+    },
+    {
+         id:13,
+         title:"tomoto grilled sandwich",
+         category:"breakfast",
+         img:'/images/item4.jpg',
+         price:16.26,
+         desc:`This is a grilled Cheese and Tomato sandwich version made with tomatoes, cheddar cheese, dried herbs and seasonings`
+   
+     },
 
 ]
    
