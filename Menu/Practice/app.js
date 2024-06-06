@@ -143,7 +143,43 @@ const menu = [
          price:16.26,
          desc:`This is a grilled Cheese and Tomato sandwich version made with tomatoes, cheddar cheese, dried herbs and seasonings`
    
-     },
+    },
+    {
+        id:10,
+        title:"stuffed mushrooms",
+        category:"lunch",
+        img:'/images/item7.jpg',
+        price:16.26,
+        desc:`this a Mushrooms caps baked with a filling of three choice cheeses, breadcrumbs and clams.`
+  
+    },
+    {
+        id:15,
+        title:"prawn-rice-noodle-salad",
+        category:"dinner",
+        img:'/images/item12.jpeg',
+        price:16.26,
+        desc:`This is a prawn and rice noodles with the spicy chillies, the salty flavour of the fish sauce and the tart lime juice.`
+  
+    },
+    {
+        id:16,
+        title:" zeppolericotta",
+        category:"dessert",
+        img:'/images/item16.jpg',
+        price:16.26,
+        desc:`marsala sabayan with pistachio gelato and pistachio brittle`
+  
+    },
+    {
+        id:17,
+        title:"chocolate shake",
+        category:"shakes",
+        img:'/images/item17.jpg',
+        price:16.26,
+        desc:`This is a grilled Cheese and Tomato sandwich version made with tomatoes, cheddar cheese, dried herbs and seasonings`
+  
+    },
 
 ]
    
