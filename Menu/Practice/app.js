@@ -36,7 +36,7 @@ const menu = [
    
     },
     {
-        id:18,
+        id:5,
         title:"strawberry sheke",
         category:"shakes",
         img:'/images/item20.png',
@@ -45,7 +45,7 @@ const menu = [
   
     },
     {
-         id:5,
+         id:6,
          title:"prawnpuff",
          category:"breakfast",
          img:"/images/item2.jpg",
@@ -54,7 +54,7 @@ const menu = [
    
      },
      {
-        id:6,
+        id:7,
         title:"sweet & sour chiken",
         category:"lunch",
         img:'/images/item6.jpg',
@@ -63,7 +63,7 @@ const menu = [
   
     },
     {
-        id:7,
+        id:8,
         title:"Cajun Blackened Chicken",
         category:"dinner",
         img:'/images/item10.jpg',
@@ -72,7 +72,7 @@ const menu = [
   
     },
     {
-        id:8,
+        id:9,
         title:"strawberry panna cotta",
         category:"dessert",
         img:'/images/item14.webp',
@@ -81,7 +81,7 @@ const menu = [
   
     },
     {
-        id:18,
+        id:10,
         title:"oreo shake",
         category:"shakes",
         img:'/images/item19.jpg',
@@ -90,7 +90,7 @@ const menu = [
   
     },
     {
-         id:9,
+         id:11,
          title:"sliptdesion breakfast",
          category:"breakfast",
          img:"/images/item3.jpg",
@@ -99,7 +99,7 @@ const menu = [
    
     },
     {
-        id:14,
+        id:12,
         title:"salad prawns",
         category:"lunch",
         img:'/images/item8.jpg',
@@ -109,7 +109,7 @@ const menu = [
     },
     
     {
-        id:11,
+        id:13,
         title:"Slow_Cooker_Vegan_Stew",
         category:"dinner",
         img:'/images/item11.jpg',
@@ -118,7 +118,7 @@ const menu = [
   
     },
     {
-        id:12,
+        id:14,
         title:"tiramisu budino",
         category:"dessert",
         img:'/images/item15.png',
@@ -127,7 +127,7 @@ const menu = [
   
     },
     {
-        id:18,
+        id:15,
         title:"banana shake",
         category:"shakes",
         img:'/images/item18.jpg',
@@ -136,7 +136,7 @@ const menu = [
   
     },
     {
-         id:13,
+         id:16,
          title:"tomoto grilled sandwich",
          category:"breakfast",
          img:'/images/item4.jpg',
@@ -145,7 +145,7 @@ const menu = [
    
     },
     {
-        id:10,
+        id:17,
         title:"stuffed mushrooms",
         category:"lunch",
         img:'/images/item7.jpg',
@@ -154,7 +154,7 @@ const menu = [
   
     },
     {
-        id:15,
+        id:18,
         title:"prawn-rice-noodle-salad",
         category:"dinner",
         img:'/images/item12.jpeg',
@@ -163,7 +163,7 @@ const menu = [
   
     },
     {
-        id:16,
+        id:19,
         title:" zeppolericotta",
         category:"dessert",
         img:'/images/item16.jpg',
@@ -172,7 +172,7 @@ const menu = [
   
     },
     {
-        id:17,
+        id:20,
         title:"chocolate shake",
         category:"shakes",
         img:'/images/item17.jpg',
