@@ -191,6 +191,11 @@ const filterBtns = document.querySelectorAll('.filter-btn');
 window.addEventListener("DOMContentLoaded", () => {
    displayMenuItems(menu);
 
+   const categorys = menu.map((item) => {
+     return item.category
+   })
+   console.log(categorys)
+   
 });
 
 filterBtns.forEach(function(btn){
@@ -201,7 +206,7 @@ filterBtns.forEach(function(btn){
             // console.log(menuItem.category)
             if(menuItem.category === btnCategory){
                 return menuItem;
-            }
+            };
         });
         // console.log(filterMenu);
         if(btnCategory === "all"){
