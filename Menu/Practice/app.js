@@ -191,10 +191,14 @@ const filterBtns = document.querySelectorAll('.filter-btn');
 window.addEventListener("DOMContentLoaded", () => {
    displayMenuItems(menu);
 
-   const categorys = menu.map((item) => {
-     return item.category
-   })
-   console.log(categorys)
+   const categories = menu.reduce((values,item) => {
+    if(!values.includes(item.category)) {
+        values.push(item.category)
+    }
+     return values;
+   },["all"])
+   
+   console.log(categories)
    
 });
 
