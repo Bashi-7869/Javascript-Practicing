@@ -196,10 +196,13 @@ window.addEventListener("DOMContentLoaded", () => {
         values.push(item.category)
     }
      return values;
-   },["all"])
-   
-   console.log(categories)
-   
+   },["all"]);
+
+  const categoryBtns = categories.map((category) => {
+    return ` <button class="filter-btn" type="button" data-id=${category}>${category}</button>`
+  })
+   .join("");
+   console.log(categoryBtns);
 });
 
 filterBtns.forEach(function(btn){
