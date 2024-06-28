@@ -202,7 +202,7 @@ window.addEventListener("DOMContentLoaded", () => {
     return ` <button class="filter-btn" type="button" data-id=${category}>${category}</button>`
   })
    .join("");
-   console.log(categoryBtns);
+   btnContainer.innerHTML = categoryBtns;
 });
 
 filterBtns.forEach(function(btn){
