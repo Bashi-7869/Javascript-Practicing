@@ -189,44 +189,10 @@ const btnContainer = document.querySelector(".btn-container");
 
 window.addEventListener("DOMContentLoaded", () => {
    displayMenuItems(menu);
-
-   const categories = menu.reduce((values,item) => {
-    if(!values.includes(item.category)) {
-        values.push(item.category)
-    }
-     return values;
-   },["all"]);
-
-  const categoryBtns = categories.map((category) => {
-    return ` <button class="filter-btn" type="button" data-id=${category}>${category}</button>`
-  })
-   .join("");
-   btnContainer.innerHTML = categoryBtns;
-   const filterBtns = document.querySelectorAll('.filter-btn');
-
-   filterBtns.forEach(function(btn){
-    btn.addEventListener("click", function (e) {
-       // console.log(e.currentTarget.dataset)
-       const btnCategory = e.currentTarget.dataset.id;
-       const filterMenu = menu.filter(menuItem => {
-           // console.log(menuItem.category)
-           if(menuItem.category === btnCategory){
-               return menuItem;
-           };
-       });
-       // console.log(filterMenu);
-       if(btnCategory === "all"){
-           displayMenuItems(menu);
-       }else{
-           displayMenuItems(filterMenu);
-       }
-   });
+   displayMenuButtons();
+  
 });
 
-});
-
-
-   
 function displayMenuItems (menuItems)  {
     let displayMenu = menuItems.map ((item) => {
 
@@ -240,13 +206,45 @@ function displayMenuItems (menuItems)  {
                        <p class="item-text">${item.desc}</p>
                   </div>
              </article> `;
-        
 });
 
 displayMenu = displayMenu.join("");
 sectionCenter.innerHTML = displayMenu;
 
 };
-   
 
+function displayMenuButtons(){
 
+    const categories = menu.reduce((values,item) => {
+        if(!values.includes(item.category)) {
+            values.push(item.category)
+        }
+         return values;
+       },["all"]);
+    
+      const categoryBtns = categories.map((category) => {
+        return ` <button class="filter-btn" type="button" data-id=${category}>${category}</button>`
+      })
+       .join("");
+       btnContainer.innerHTML = categoryBtns;
+       const filterBtns = document.querySelectorAll('.filter-btn');
+    
+       filterBtns.forEach(function(btn){
+        btn.addEventListener("click", function (e) {
+           // console.log(e.currentTarget.dataset)
+           const btnCategory = e.currentTarget.dataset.id;
+           const filterMenu = menu.filter(menuItem => {
+               // console.log(menuItem.category)
+               if(menuItem.category === btnCategory){
+                   return menuItem;
+               };
+           });
+           // console.log(filterMenu);
+           if(btnCategory === "all"){
+               displayMenuItems(menu);
+           }else{
+               displayMenuItems(filterMenu);
+           }
+       });
+    });
+}
