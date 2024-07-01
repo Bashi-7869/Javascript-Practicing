@@ -1,3 +1,9 @@
+// get only unique categories - hardest one
+// iterate over categories return buttons
+// make sure to select buttons when they are available
+
+// items
+
 const menu = [
     {
         id:1,
@@ -186,6 +192,7 @@ const menu = [
 const sectionCenter = document.querySelector(".section-center");
 const btnContainer = document.querySelector(".btn-container");
 
+// load items
 
 window.addEventListener("DOMContentLoaded", () => {
    displayMenuItems(menu);
@@ -228,7 +235,8 @@ function displayMenuButtons(){
        .join("");
        btnContainer.innerHTML = categoryBtns;
        const filterBtns = document.querySelectorAll('.filter-btn');
-    
+       
+    //    filter items
        filterBtns.forEach(function(btn){
         btn.addEventListener("click", function (e) {
            // console.log(e.currentTarget.dataset)
