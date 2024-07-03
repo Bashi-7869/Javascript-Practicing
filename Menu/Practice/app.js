@@ -219,17 +219,16 @@ function displayMenuItems (menuItems)  {
              </article> `;
 });
 
-// adding joinmethod to displayMenuarray
+y
 displayMenu = displayMenu.join("");
-// displayingMenu in sectincenter
+// displayingMenu in sectioncenter
 sectionCenter.innerHTML = displayMenu;
 
 };
 
 function displayMenuButtons(){
-            //    using reduceMethod 
+           
     const categories = menu.reduce((values,item) => {
-        /*values does not includes item.category then push item.category to values  */
         if(!values.includes(item.category)) {
             values.push(item.category)
         }
@@ -237,29 +236,24 @@ function displayMenuButtons(){
        },["all"]);
     
       const categoryBtns = categories.map((category) => {
-        /*using template literals for string interpolation to display buttons*/
-        return ` <button class="filter-btn" type="button" data-id=${category}>${category}</button>`
+       return ` <button class="filter-btn" type="button" data-id=${category}>${category}</button>`
       })
        .join("");
        /* displaying buttons using join */
        btnContainer.innerHTML = categoryBtns;
        const filterBtns = btnContainer.querySelectorAll('.filter-btn');
        
-    //    filter items
+      // filter items
        filterBtns.forEach(function(btn){
-        /*  adding eventhandler to buttons  */
-        btn.addEventListener("click", function (e) {
-
-            /*  giving specific id to button and storing in  variable */
+       btn.addEventListener("click", function (e) {
             // console.log(e.currentTarget.dataset.id)
-           const btnCategory = e.currentTarget.dataset.id;
-           /* filtering buttons using filterMethod and compairing menuItemcategory with buttons */
-           const filterMenu = menu.filter(menuItem => {
+            const btnCategory = e.currentTarget.dataset.id;
+            const filterMenu = menu.filter(menuItem => {
                // console.log(menuItem.category)
                if(menuItem.category === btnCategory){
                    return menuItem;
                };
-           });
+            });
            // console.log(filterMenu);
             /* filtering buttons menu wise when clicked button */
            if(btnCategory === "all"){
