@@ -2,7 +2,7 @@
 // iterate over categories return buttons
 // make sure to select buttons when they are available
 
-// items
+// Menu items
 
 const menu = [
     {
@@ -188,12 +188,13 @@ const menu = [
     },
 
 ]
-   
+
+//    queryslectors
 const sectionCenter = document.querySelector(".section-center");
 const btnContainer = document.querySelector(".btn-container");
 
 // load items
-
+// adding event handler to window
 window.addEventListener("DOMContentLoaded", () => {
    displayMenuItems(menu);
    displayMenuButtons();
@@ -202,6 +203,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
 function displayMenuItems (menuItems)  {
     let displayMenu = menuItems.map ((item) => {
+       
+        
+// using template literals for string interpolation to display MenuItems
 
         return`<article class="menu-item">
                     <img src=${item.img} class="photo" alt=${item.title} />
@@ -215,14 +219,17 @@ function displayMenuItems (menuItems)  {
              </article> `;
 });
 
+// adding joinmethod to displayMenuarray
 displayMenu = displayMenu.join("");
+// displayingMenu in sectincenter
 sectionCenter.innerHTML = displayMenu;
 
 };
 
 function displayMenuButtons(){
-
+            //    using reduceMethod 
     const categories = menu.reduce((values,item) => {
+        /*values does not includes item.category then push item.category to values  */
         if(!values.includes(item.category)) {
             values.push(item.category)
         }
@@ -230,17 +237,23 @@ function displayMenuButtons(){
        },["all"]);
     
       const categoryBtns = categories.map((category) => {
+        /*using template literals for string interpolation to display buttons*/
         return ` <button class="filter-btn" type="button" data-id=${category}>${category}</button>`
       })
        .join("");
+       /* displaying buttons using join */
        btnContainer.innerHTML = categoryBtns;
-       const filterBtns = document.querySelectorAll('.filter-btn');
+       const filterBtns = btnContainer.querySelectorAll('.filter-btn');
        
     //    filter items
        filterBtns.forEach(function(btn){
+        /*  adding eventhandler to buttons  */
         btn.addEventListener("click", function (e) {
-           // console.log(e.currentTarget.dataset)
+
+            /*  giving specific id to button and storing in  variable */
+            // console.log(e.currentTarget.dataset.id)
            const btnCategory = e.currentTarget.dataset.id;
+           /* filtering buttons using filterMethod and compairing menuItemcategory with buttons */
            const filterMenu = menu.filter(menuItem => {
                // console.log(menuItem.category)
                if(menuItem.category === btnCategory){
@@ -248,6 +261,7 @@ function displayMenuButtons(){
                };
            });
            // console.log(filterMenu);
+            /* filtering buttons menu wise when clicked button */
            if(btnCategory === "all"){
                displayMenuItems(menu);
            }else{
