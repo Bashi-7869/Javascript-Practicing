@@ -3,15 +3,10 @@
   padding: 0px;
 }
 
-html, body {
-  height: 100%;
-  width: 100%;
-}
-
 .conatainer{
   box-sizing: border-box;
   padding: 8rem;
-  width: 40rem;
+  width: 70%;
   margin: auto;
   box-align: center;
   background-color: aqua;
@@ -19,9 +14,25 @@ html, body {
   border:  5px solid black;
   border-radius: 4px;
   font-size: 1.5rem;
-  font-weight: 200;
+  font-weight: 200; 
 }
-  
+
+button{
+  box-sizing: border-box;
+  display: block; 
+  color: white;
+  background-color: violet;
+  border: 3px solid cyan ;
+  border-radius: 0.7rem;
+  padding: 1rem 3rem;
+  font-family: 'Courgette', cursive;
+  font-size: large;
+  margin:auto;
+}
+
+.codejoke{
+  margin-top:3rem;
+}
 .randomjoke{
   background-color: black;
   padding: 3rem 3rem;
@@ -30,23 +41,10 @@ html, body {
   color: cyan;
   text-shadow:  1px 1px #140b0b;
 }
-  
-#jokesplay{
-  color: black;
-  text-align: center;
-    
+.jokes{
+  color: violet;
+  font-family:'Courgette', cursive ;
 }
-
-button{
-  box-sizing: border-box;
-  margin-left: 50rem;
-  padding:1rem ; 
-  width:20rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  /* box-align: center; */
-}
-  
 h4{
   color: cyan;
 }
