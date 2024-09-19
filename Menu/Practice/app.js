@@ -219,7 +219,6 @@ function displayMenuItems (menuItems)  {
              </article> `;
 });
 
-y
 displayMenu = displayMenu.join("");
 // displayingMenu in sectioncenter
 sectionCenter.innerHTML = displayMenu;
